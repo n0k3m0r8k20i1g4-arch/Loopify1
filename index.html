@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Loopify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Loopify</h1>
+
+  <div id="modeSelect">
+    <h3>状況を選択</h3>
+    <div class="buttons">
+      <button onclick="selectMode('study')">勉強</button>
+      <button onclick="selectMode('work')">作業</button>
+      <button onclick="selectMode('chill')">チル</button>
+      <button onclick="selectMode('sleep')">睡眠</button>
+    </div>
+  </div>
+
+  <div id="playerUI" class="hidden">
+    <h3 id="status"></h3>
+
+    <audio id="player" controls autoplay loop></audio>
+
+    <div id="tracks"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
